@@ -29,13 +29,19 @@ const ctx = canvas.getContext('2d');
 // }
 // makeGrid()
 
+//checkerboard function
 function draw(){
+  // there are 8 rows on a checkerboard
   for(var x = 0; x < 8; x++){
     for(var y = 0; y < 8; y++){
+      // there are an even number of squars on a checkerboard
       if (x%2 == y%2){
+        //the background is red so we only need to do half of the squars
         ctx.fillStyle = 'black';
+        // the size of the board calls for 100x100 squares since its a 800x800 canvas with 8 rows and colums
         ctx.fillRect(100*x,100*y,100,100);
       }
+      // //this would make the other squares with no need for the canvas anymore
       // else {
       //   ctx.fillStyle = 'white';
       //   ctx.fillRect(100*x,100*y,100,100);

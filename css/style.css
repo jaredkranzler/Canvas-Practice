@@ -1,6 +1,7 @@
 body {
-  background: mediumseagreen;
+  background: white;
 }
 canvas {
-  background-color: white;
+  background-color: rgb(153, 0, 0);
+  border: solid 15px rgb(18, 0, 0);
 }
